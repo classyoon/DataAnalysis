@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		CA704B4C2D848EB90085EF01 /* CodableCSV in Frameworks */ = {isa = PBXBuildFile; productRef = CA704B4B2D848EB90085EF01 /* CodableCSV */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		CA704B152D848C610085EF01 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA704B4C2D848EB90085EF01 /* CodableCSV in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,12 +111,14 @@
 			buildRules = (
 			);
 			dependencies = (
+				CA704B4A2D848D560085EF01 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				CA704B062D848C5E0085EF01 /* DataAnalysis */,
 			);
 			name = DataAnalysis;
 			packageProductDependencies = (
+				CA704B4B2D848EB90085EF01 /* CodableCSV */,
 			);
 			productName = DataAnalysis;
 			productReference = CA704B042D848C5E0085EF01 /* DataAnalysis.app */;
@@ -195,6 +202,9 @@
 			);
 			mainGroup = CA704AFB2D848C5E0085EF01;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				CA704B462D848CC50085EF01 /* XCRemoteSwiftPackageReference "CodableCSV" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = CA704B052D848C5E0085EF01 /* Products */;
 			projectDirPath = "";
@@ -265,6 +275,10 @@
 			isa = PBXTargetDependency;
 			target = CA704B032D848C5E0085EF01 /* DataAnalysis */;
 			targetProxy = CA704B1F2D848C610085EF01 /* PBXContainerItemProxy */;
+		};
+		CA704B4A2D848D560085EF01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = CA704B492D848D560085EF01 /* CodableCSV */;
 		};
 /* End PBXTargetDependency section */
 
@@ -558,6 +572,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CA704B462D848CC50085EF01 /* XCRemoteSwiftPackageReference "CodableCSV" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dehesa/CodableCSV";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.6.7;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CA704B492D848D560085EF01 /* CodableCSV */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA704B462D848CC50085EF01 /* XCRemoteSwiftPackageReference "CodableCSV" */;
+			productName = CodableCSV;
+		};
+		CA704B4B2D848EB90085EF01 /* CodableCSV */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA704B462D848CC50085EF01 /* XCRemoteSwiftPackageReference "CodableCSV" */;
+			productName = CodableCSV;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CA704AFC2D848C5E0085EF01 /* Project object */;
 }
